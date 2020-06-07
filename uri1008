@@ -1,0 +1,6 @@
+EN = int(input())
+HM = int(input())
+SH = float(input())
+salario = HM*SH
+print('NUMBER = {}'.format(EN))
+print('SALARY = U$ {:.2f}'.format(salario))
