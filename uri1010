@@ -1,6 +1,0 @@
-p1 = input().split(" ")
-p2 = input().split(" ")
-code1, unit1, value1 = p1
-code2, unit2, value2 = p2
-total = (int(unit1)*float(value1))+(int(unit2)*float(value2))
-print('VALOR A PAGAR: R$ {:.2f}' .format(total))
