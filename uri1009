@@ -1,6 +1,0 @@
-seller = input()
-FS = float(input())
-ST = float(input())
-porcentagem = ST*0.15
-salariofinal = FS+porcentagem
-print('TOTAL = R$ {:.2f}'.format(salariofinal))
