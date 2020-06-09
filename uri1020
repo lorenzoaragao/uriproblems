@@ -1,0 +1,7 @@
+age = int(input())
+years = age//365
+r = age%365
+months = r//30
+r = r%30
+days = r
+print('{} ano(s)\n{} mes(es)\n{} dia(s)' .format(years, months, days))
