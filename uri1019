@@ -1,0 +1,6 @@
+N = int(input())
+hours = N//3600
+r = N%3600
+minutes = r//60
+seconds = r%60
+print('{}:{}:{}' .format(hours, minutes, seconds))
