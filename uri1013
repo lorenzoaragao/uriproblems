@@ -1,0 +1,17 @@
+values = [int(x) for x in input().split(' ')]
+a, b, c = values
+MaiorAB = (a+b+abs(a-b))/2
+if MaiorAB < c:
+    print('{} eh o maior'.format(c))
+elif a > b:
+    print('{} eh o maior' .format(a))
+else:
+    print('{} eh o maior' .format(b))
+
+# THIS CODE BELOW IS EASIER THAN THE ONE ABOVE
+
+values = [int(x) for x in input().split(' ')]
+a, b, c = values
+print('{} eh o maior' .format(max(values)))
+
+# BOTH OF THEM CAN SOLVE THE PROBLEM
