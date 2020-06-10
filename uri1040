@@ -1,0 +1,18 @@
+values = [float(x) for x in input().split(' ')]
+n1, n2, n3, n4 = values
+average = (n1*2+n2*3+n3*4+n4*1)/10
+print('Media: {:.1f}' .format(average))
+if average >= 7:
+    print('Aluno aprovado.')
+if average < 5:
+    print('Aluno reprovado.') 
+if 5 <= average <= 6.9:
+    notaexame = float(input())
+    average2 = (notaexame+average)/2
+    print('Aluno em exame.')
+    print('Nota do exame: {:.1f}' .format(notaexame))
+    if average2 >= 5:
+        print('Aluno aprovado.')
+    else:
+        print('Aluno reprovado.')
+    print('Media final: {:.1f}' .format(average2))
