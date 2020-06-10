@@ -1,0 +1,10 @@
+from math import sqrt, pow
+numbers = [float(x) for x in input().split(' ')]
+A, B, C = numbers
+try:
+    R1 = (B * (-1) + sqrt(pow(B, 2) - 4 * A * C)) / (2 * A)
+    R2 = (B * (-1) - sqrt(pow(B, 2) - 4 * A * C)) / (2 * A)
+    print('R1 = {:.5f}' .format(R1))
+    print('R2 = {:.5f}' .format(R2))
+except:
+    print('Impossivel calcular')
