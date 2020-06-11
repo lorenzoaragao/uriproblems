@@ -1,1 +1,8 @@
-
+values = map(float, input().split(' '))
+a, b, c = values
+perimeter = a + b + c
+if abs(a - b) < c < (a + b) or abs(b - c) < a < (b + c) or abs(a - c) < b < (a + c):
+    print('Perimetro = {:.1f}'.format(perimeter))
+else:
+    area = (a + b) * (c / 2)
+    print('Area = {:.1f}'.format(area))
