@@ -1,0 +1,7 @@
+numbers = [int(n) for n in input().split(' ')]
+values = [int(v) for v in numbers]
+[x, y, z] = values
+values.sort()
+print(*values, sep='\n')
+print()
+print(*numbers, sep='\n')
