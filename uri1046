@@ -1,0 +1,11 @@
+values = [int(x) for x in input().split()]
+h1, h2 = values
+if h1 < h2:
+    time1 = h2 - h1
+    print('O JOGO DUROU {} HORA(S)' .format(time1))
+elif h1 > h2:
+    time2 = (24 - h1) + h2
+    print('O JOGO DUROU {} HORA(S)'.format(time2))
+elif h1 == h2:
+    time3 = (24 - h1) + h2
+    print('O JOGO DUROU {} HORA(S)' .format(time3))
