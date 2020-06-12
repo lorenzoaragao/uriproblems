@@ -1,0 +1,36 @@
+salary = float(input())
+if 0 <= salary <= 400:
+    r = 0.15*100
+    me = salary * 0.15
+    ns = salary * 1.15
+    print('Novo salario: {:.2f}' .format(ns))
+    print('Reajuste ganho: {:.2f}' .format(me))
+    print('Em percentual: {:.0f} %' .format(r))
+elif 400 < salary <= 800:
+    r = 0.12*100
+    me = salary * 0.12
+    ns = salary * 1.12
+    print('Novo salario: {:.2f}'.format(ns))
+    print('Reajuste ganho: {:.2f}'.format(me))
+    print('Em percentual: {:.0f} %'.format(r))
+elif 800 < salary <= 1200:
+    r = 0.10*100
+    me = salary * 0.10
+    ns = salary * 1.10
+    print('Novo salario: {:.2f}'.format(ns))
+    print('Reajuste ganho: {:.2f}'.format(me))
+    print('Em percentual: {:.0f} %'.format(r))
+elif 1200 < salary <= 2000:
+    r = 0.07*100
+    me = salary * 0.07
+    ns = salary * 1.07
+    print('Novo salario: {:.2f}'.format(ns))
+    print('Reajuste ganho: {:.2f}'.format(me))
+    print('Em percentual: {:.0f} %'.format(r))
+elif salary > 2000:
+    r = 0.04*100
+    me = salary * 0.04
+    ns = salary * 1.04
+    print('Novo salario: {:.2f}'.format(ns))
+    print('Reajuste ganho: {:.2f}'.format(me))
+    print('Em percentual: {:.0f} %'.format(r))
