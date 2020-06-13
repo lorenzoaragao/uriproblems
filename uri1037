@@ -1,3 +1,5 @@
+# WRONG ANSWER 10%
+
 number = float(input())
 if 0 <= number <= 25:
     print('Intervalo [0, 25]')
