@@ -1,0 +1,15 @@
+value = float(input())
+va1 = (value - 2000.00)
+taxe1 = va1 * 0.08
+vb1 = (value - 2000.00); vb2 = (vb1 - 1000.00); vb3 = (vb1 - vb2)
+taxe2 = vb3 * 0.08 + vb2*0.18
+vc1 = (value - 2000.00); vc2 = (vc1 - 1000.00); vc3 = (vc2 - 1500.00); vc4 = (vc2 - vc3); vc5 = (vc1 - vc2)
+taxe3 = vc5*0.08 + vc4*0.18 + vc3*0.28
+if value <= 2000.00:
+    print('Isento')
+elif 2000.01 <= value <= 3000.00:
+    print('R$ {:.2f}'.format(taxe1))
+elif 3000.01 <= value <= 4500.00:
+    print('R$ {:.2f}'.format(taxe2))
+else:
+    print('R$ {:.2f}'.format(taxe3))
