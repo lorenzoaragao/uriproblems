@@ -1,0 +1,38 @@
+classe1 = input().lower()
+classe2 = input().lower()
+classe3 = input().lower()
+a1 = str('vertebrado'); a2 = str('invertebrado')
+b1 = str('ave'); b2 = str('mamifero'); b3 = str('inseto'); b4 = str('anelideo')
+c1 = str('carnivoro'); c2 = str('onivoro'); c3 = str('onivoro'); c4 = str('herbivoro'); c5 = str('hematofago'); c6 = str('herbivoro'); c7 = str('hematofago'); c8 = str('onivoro')
+if classe1 == a1:
+    if classe2 == b1:
+        if classe3 == c1:
+            print('aguia')
+if classe1 == a1:
+    if classe2 == b1:
+        if classe3 == c2:
+            print('pomba')
+if classe1 == a1:
+    if classe2 == b2:
+        if classe3 == c3:
+            print('homem')
+if classe1 == a1:
+    if classe2 == b2:
+        if classe3 == c4:
+            print('vaca')
+if classe1 == a2:
+    if classe2 == b3:
+        if classe3 == c5:
+            print('pulga')
+if classe1 == a2:
+    if classe2 == b3:
+        if classe3 == c6:
+            print('lagarta')
+if classe1 == a2:
+    if classe2 == b4:
+        if classe3 == c7:
+            print('sanguessuga')
+if classe1 == a2:
+    if classe2 == b4:
+        if classe3 == c8:
+            print('minhoca')
