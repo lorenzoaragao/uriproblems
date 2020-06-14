@@ -1,0 +1,6 @@
+numbers = [int(input()), int(input()), int(input()), float(input()), float(input()), int(input())]
+x = 0
+for n in range(0, 6):
+    if numbers[n] > 0:
+        x = x + 1
+print('{} valores positivos' .format(x))
