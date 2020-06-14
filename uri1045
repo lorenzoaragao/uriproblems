@@ -1,0 +1,17 @@
+values = [float(v) for v in input().split()]
+values.sort(reverse=True)
+[a, b, c] = values
+if a > 0 and b > 0 and c > 0:
+    if abs(b - c) < a < (b + c) and abs(a - c) < b < (a + c) and abs(a - b) < c < (a + b):
+        if a**2 == b**2 + c**2:
+            print('TRIANGULO RETANGULO')
+        elif a**2 > b**2 + c**2:
+            print('TRIANGULO OBTUSANGULO')
+        elif a**2 < b**2 + c**2:
+            print('TRIANGULO ACUTANGULO')
+        if a == b == c:
+                print('TRIANGULO EQUILATERO')
+        elif a == b != c or a == c != b or b == c != a:
+                print('TRIANGULO ISOSCELES')
+    else:
+        print('NAO FORMA TRIANGULO')
