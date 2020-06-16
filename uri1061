@@ -1,0 +1,41 @@
+d1 = int(input().split()[1])
+hour = input().split(' : ')
+h1 = int(hour[0])
+m1 = int(hour[1])
+s1 = int(hour[2])
+
+d2 = int(input().split()[1])
+hour = input().split(' : ')
+h2 = int(hour[0])
+m2 = int(hour[1])
+s2 = int(hour[2])
+
+days = d2 - d1
+hours = h2 - h1
+if hours < 0:
+    hours += 24
+    days -= 1
+
+minutes = m2 - m1
+if minutes < 0:
+    minutes += 60
+    hours -= 1
+    if hours < 0:
+        hours += 24
+
+seconds = s2 - s1
+if seconds < 0:
+    seconds += 60
+    minutes -= 1
+
+
+if days == 1 and hours == minutes == seconds == 0:
+    print('0 dia(s)')
+    print('24 hora(s)')
+    print('0 minuto(s)')
+    print('0 segundo(s)')
+else:
+    print('{} dia(s)' .format(days))
+    print('{} hora(s)' .format(hours))
+    print('{} minuto(s)' .format(minutes))
+    print('{} segundo(s)' .format(seconds))
