@@ -1,0 +1,12 @@
+valores = [float(input()), float(input()), float(input()), float(input()), float(input()), float(input())]
+
+qtdePositivos = 0
+somaPositivos = 0
+
+for v in range(0, 6):
+    if (valores[v] > 0):
+        qtdePositivos += 1
+        somaPositivos = somaPositivos + valores[v]
+        
+print("{} valores positivos" .format(qtdePositivos))
+print("{:.1f}" .format(somaPositivos/qtdePositivos))
