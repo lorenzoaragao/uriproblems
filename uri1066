@@ -1,0 +1,22 @@
+even = 0
+odd = 0
+positive = 0
+negative = 0
+
+for v in range(0, 5):
+    values = int(input())
+
+    if (values % 2 == 0):
+        even += 1
+    else:
+        odd += 1
+
+    if (values > 0):
+        positive += 1
+    if (values < 0):
+        negative += 1
+
+print("{} valor(es) par(es)" .format(even))
+print("{} valor(es) impar(es)" .format(odd))
+print("{} valor(es) positivo(s)" .format(positive))
+print("{} valor(es) negativo(s)" .format(negative))
