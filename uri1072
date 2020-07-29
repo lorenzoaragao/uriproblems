@@ -1,0 +1,15 @@
+cases = int(input())
+
+caseIn = 0
+caseOut = 0
+
+for c in range(0, cases):
+    case = int(input())
+
+    if 10 <= case <= 20:
+        caseIn += 1
+    else:
+        caseOut += 1
+
+print("{} in" .format(caseIn))
+print("{} out" .format(caseOut))
