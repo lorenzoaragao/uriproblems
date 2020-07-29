@@ -1,0 +1,25 @@
+numberX = int(input())
+numberY = int(input())
+
+sum = 0
+
+if numberX > numberY:
+    for n in range(numberY+1, numberX):
+        if n % 2 != 0:
+            sum = sum + n
+
+if numberY > numberX:
+    for n in range(numberX+1, numberY):
+        if n % 2 != 0:
+            sum = sum + n
+
+if numberX == numberY:
+    if numberX % 2 != 0 and numberY % 2 !=0:
+        print(numberX)
+
+if numberX == numberY:
+    if numberX % 2 == 0 and numberY % 2 == 0:
+        print("0")
+        
+else:
+    print(sum)
