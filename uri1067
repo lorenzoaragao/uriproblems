@@ -1,0 +1,5 @@
+number = int(input())
+
+for n in range(0, number+1):
+    if (n % 2 != 0):
+        print(n)
