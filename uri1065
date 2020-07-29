@@ -1,0 +1,7 @@
+for v in range(0, 5):
+    values = int(input())
+
+    if (values % 2 == 0):
+        even += 1
+
+print("{} valores pares" .format(even))
