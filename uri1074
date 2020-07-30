@@ -1,0 +1,17 @@
+lista = []
+cases = int(input())
+
+for case in range(cases):
+    lista.append(int(input()))
+
+for case in lista:
+    if case == 0:
+        print("NULL")
+    if case > 0 and case % 2 == 0:
+        print("EVEN POSITIVE")
+    if case > 0 and case % 2 != 0:
+        print("ODD POSITIVE")
+    if case < 0 and case % 2 == 0:
+        print("EVEN NEGATIVE")
+    if case < 0 and case % 2 != 0:
+        print("ODD NEGATIVE")
